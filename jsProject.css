@@ -1,0 +1,69 @@
+/*Formatting body*/
+body
+{
+    background-color: #fff;
+    font-size: 22px;
+    height: 100%;
+    color: rgb(41, 8, 8);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+/*Formatting titles*/
+.title h1
+{
+    font-size: 50px;
+    font-weight: 10000;
+    background-color: #eeebe6;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+
+    position: relative;
+    z-index: 9;
+    letter-spacing: 1.5px;
+    padding: 50px;
+}
+
+.title h3
+{
+    font-family: "Nunito", sans-serif;
+    font-size: x-large;
+    padding-left: 40px;
+}
+
+/*Formatting Buttons */
+button 
+{
+    color: whitesmoke;
+    background-color: cadetblue;
+    border: 1px solid rgb(6, 6, 61);
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+    width: 7em
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#img
+{
+    padding-top: 10px;
+}
+
+/*Formatting paragraphs*/
+#p1
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0%;
+    margin-top: 0%;
+    letter-spacing: .3px;
+}
