@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Encouragements
+    </title>
+
+    <!--link for css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito">
+    <link rel="stylesheet" type="text/css" href="jsProject.css">
+    
+    <!--Link for js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="jsProject.js"></script>
+
+</head>
+
+<body>
+
+    <!--Title-->
+    <div class="title">
+        <h1>Encouragement Generator</h1>
+        <h3>Click on an emotion to get a few verses of support!</h3>
+    </div>
+
+    <!--Buttons-->
+    <div id="buttons">
+        <button id="happy" onclick="clearContent();insertHappyCode();">Happy</button>
+        <button id="sad" onclick="clearContent();insertSadCode();">Sad</button>
+        <button id="angry" onclick="clearContent();insertAngryCode();">Angry</button>
+        <button id="worrried" onclick="clearContent();insertWorriedCode();">Worried</button>
+    </div>
+
+    <!--Content that will be added based on user input-->
+    <div id="clear">
+        <div id="add-to">
+            <img id = "img" width = "100%">
+            <p id = "p1" class="p1"></p>
+            <p id = "p2" class="p2"></p>
+            <p id = "p3" class="p3"></p>
+        </div>
+    </div>
+
+</body>
+</html>
