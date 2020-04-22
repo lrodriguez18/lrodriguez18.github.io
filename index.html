@@ -50,18 +50,18 @@
                     alert("A search must be entered in the field!");
                 }
                 // Else, execute the code.
-                else{
+                else
+                {
                     var url = "";
                     var img = "";
                     var titel = "";
                     var author = "";
-                }
-
-                // Shorthand ajax request to Google Books API
-                $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(response){
-                    console.log(response);
-                });
                 
+                    $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(response){
+                    console.log(response);
+                    });
+                
+                }
             });
         });
     
