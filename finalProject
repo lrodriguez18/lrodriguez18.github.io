@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Rodriguez Final Project
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready(function() {
+    $('#table').DataTable( {
+        "ajax": "http://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&&searchTerm=treasure%20coast%20humane",
+        "columns": [
+            { "data": "charityName" },
+            { "data": "missionStatement" },
+            { "data": "state" },
+            { "data": "city" },
+            { "data": "website" }
+        ]
+    } );
+} );
+    </script>
+
+</head>
+
+<body>
+    <h1>Charity Search</h1>
+    <label for="cname">Name</label>
+    <input type="text" id="cname" name="cname"><br><br>
+
+    <label for="state">State</label>
+    <input type="text" id="state" name="state"><br><br>
+
+    <label for="state">City</label>
+    <input type="text" id="city" name="city"><br><br>
+    <button id = "submit-search">Submit</button> <br><br>
+
+    <table id="table" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mission</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Mission</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Website</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
