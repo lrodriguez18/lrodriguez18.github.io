@@ -11,6 +11,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -30,16 +34,9 @@
 </head>
 
 <body>
-    <h1>Charity Search</h1>
-    <label for="cname">Name</label>
-    <input type="text" id="cname" name="cname"><br><br>
-
-    <label for="state">State</label>
-    <input type="text" id="state" name="state"><br><br>
-
-    <label for="state">City</label>
-    <input type="text" id="city" name="city"><br><br>
-    <button id = "submit-search">Submit</button> <br><br>
+    <div class = "jumbotron text-center">
+        <h1>Charity Search</h1>
+    </div>
 
     <table id="table" class="display" style="width:100%">
         <thead>
@@ -61,4 +58,5 @@
             </tr>
         </tfoot>
     </table>
+</html>
 </body>
