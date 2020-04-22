@@ -55,13 +55,9 @@
             var img = "";
             var title = "";
             var author = "";
-
-            $.ajax({
-                url: "https://www.googleapis.com/books/v1/volumes?q=" + search,
-                type: "GET",
-                dataType: "json",
-                success: console.log("Show the responses"),
-                error: console.log("Error!")
+            
+            $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(response){
+            console.log(response);
             });
 
         }
