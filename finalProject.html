@@ -9,13 +9,13 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
     <script>
         $(document).ready(function() {
     $('#table').DataTable( {
-        "ajax": "https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&&searchTerm=treasure%20coast%20humane",
+        "ajax": "http://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&&searchTerm=treasure%20coast%20humane",
         "columns": [
             { "data": "charityName" },
             { "data": "missionStatement" },
