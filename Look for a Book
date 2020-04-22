@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Books Search
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="final.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script>
+        $document.ready(function(){
+            // Submit data on click.
+            $("myform").submit(function(){
+                // Input value.
+                var search = $("#books").val();
+
+                // Alert user if nothing was entered.
+                if (search == "")
+                {
+                    alert("A search must be entered in the field!");
+                }
+                // Else, execute the code.
+                else{
+                    var url = "";
+                    var img = "";
+                    var titel = "";
+                    var author = "";
+                }
+
+                // Shorthand ajax request to Google Books API
+                $.get("https://www.googleapis.com/books/v1/volumes?q=" + search, function(response){
+                    console.log(response);
+                })
+
+
+            });
+        });
+    
+    </script>
+
+
+
+</head>
+
+<body>
+    <div id ="search">
+        <!--User input-->
+        <form id="myForm">
+            <div>
+                <input type = "search" id = "books">
+                <label for = "search" id = "books"></label>
+            </div>
+            <button>Search Books</button>
+        </form>
+    </div>
+
+    <!--Populating the result from input-->
+    <div id = result></div>
+</body>
+
+</html>
