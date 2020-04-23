@@ -36,7 +36,25 @@
     }
     </style>
 
-<script>
+</head>
+
+<body>
+    <div id ="search">
+        <!--User input-->
+        <form id="myForm">
+            <div>
+                <input type = "search" id = "books">
+                <label for = "search">Search Books</label>
+            </div>
+            <button>Search Books</button>
+        </form>
+    </div>
+
+    <!--Populating the result from input-->
+    <div id = result></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
         function loadResults(){
                 // Input value.
         var search = $("#books").val();
@@ -64,27 +82,7 @@
         $(document).ready(function(){
             $("myform").submit(loadResults);
         });
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </script>
-
-
-
-</head>
-
-<body>
-    <div id ="search">
-        <!--User input-->
-        <form id="myForm">
-            <div>
-                <input type = "search" id = "books">
-                <label for = "search">Search Books</label>
-            </div>
-            <button>Search Books</button>
-        </form>
-    </div>
-
-    <!--Populating the result from input-->
-    <div id = result></div>
 </body>
 
 </html>
