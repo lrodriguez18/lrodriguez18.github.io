@@ -29,10 +29,11 @@ $(document).ready(function(){
           {
 			   title = $('<h5 class="center-align white-text">' + response.items[i].volumeInfo.title + '</h5>');  
 
-			  if (response.items[i].volumeInfo.authors != "undefined")
+			  if (response.items[i].volumeInfo.authors != undefined)
               {
                 author = $('<h5 class="center-align white-text"> By:' + response.items[i].volumeInfo.authors + '</h5>');
-              }
+              	author.appendTo('#result');
+			  }
 
 			   img = $('<img class="aligning card z-depth-5" id="dynamic"><br><a href=' + response.items[i].volumeInfo.infoLink + '><button id="imagebutton" class="btn red aligning">Read More</button></a>'); 
 
@@ -41,7 +42,6 @@ $(document).ready(function(){
 			   img.attr('src', url);
 
 			   title.appendTo('#result');
-			   author.appendTo('#result');
 			   img.appendTo('#result');
           }
    	  });
