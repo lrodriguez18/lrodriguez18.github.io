@@ -29,7 +29,8 @@
             console.log("Show all the results: " + response);
             for(var i in response["data"])
             {
-                showResult(response["data"][i]);
+                var charity = response["data"][i];
+                showResult(charity["charityName"]);
             }
 
         }
