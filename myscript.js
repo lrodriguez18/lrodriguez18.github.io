@@ -29,7 +29,7 @@ $(document).ready(function(){
           {
 			   title = $('<h5 class="center-align white-text">' + response.items[i].volumeInfo.title + '</h5>');  
 
-			  if (response.items[i].volumeInfo.authors != "")
+			  if (response.items[i].volumeInfo.authors != "undefined")
               {
                 author = $('<h5 class="center-align white-text"> By:' + response.items[i].volumeInfo.authors + '</h5>');
               }
