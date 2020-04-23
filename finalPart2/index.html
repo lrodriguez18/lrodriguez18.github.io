@@ -40,7 +40,7 @@
 
         //make the ajax request
         $.ajax({
-            url: "https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&zipCode=97060", 
+            url: "https://cors-anywhere.herokuapp.com/http://https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&zipCode=97060", 
             jsonp: "callback",
             dataType: "jsonp", // the data received
             success: logResults
