@@ -21,7 +21,7 @@
     function showResult(result)
         {
             //append the task to the TODO list
-            $("#results").append("<td>" + result + "</td>");
+            $("#results").append("<tr><td>" + result + "</td><tr>");
         }
 
     function logResults(response)
@@ -29,12 +29,12 @@
             console.log("Show all the results: " + response);
             for(var i in response)
             {
-                showResult(response[i]["zipCode"]);
+                showResult(response[i]["charityName"]);
             }
 
         }
 
-        function loadResults()
+    function loadResults()
     {
         console.log("Load the results via ajax");
 
@@ -45,6 +45,7 @@
             success: logResults
         });
     }
+
     /*
     $('#table').DataTable( {
         "ajax": $.getJSON("https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&searchTerm=treasure%20coast%20humane?callback=?",function(json){
@@ -78,10 +79,7 @@
                 <th>Website</th>
             </tr>
         </thead>
-        <tbody>
-            <tr id = "results">
-
-            </tr>
+        <tbody id = results>
 
         </tbody>
         <tfoot>
