@@ -34,19 +34,17 @@
 
         }
 
-    function loadResults()
+        function loadResults()
     {
         console.log("Load the results via ajax");
 
         //make the ajax request
         $.ajax({
-            url: "https://cors-anywhere.herokuapp.com/http://https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&zipCode=97060", 
-            jsonp: "callback",
-            dataType: "jsonp", // the data received
+            url: "https://cors-anywhere.herokuapp.com/http://data.orghunter.com/v1/charitybasic?user_key=1b7a21f75daf42af87666ef713510b26&ein=590774235", 
+            dataType: "json", // the data received
             success: logResults
         });
     }
-
     /*
     $('#table').DataTable( {
         "ajax": $.getJSON("https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&searchTerm=treasure%20coast%20humane?callback=?",function(json){
