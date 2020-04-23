@@ -22,7 +22,7 @@ $(document).ready(function(){
       var author = "";
 
 	//Ajax call to Google Books API
-   	  $.get("https://www.googleapis.com/books/v1/volumes?q=" + search,function(response){
+   	  $.get("https://www.googleapis.com/books/v1/volumes?q=" + search + "=free-ebooks",function(response){
 
 		  //Appends title, author, and image of book to the page.
           for(i=0;i<response.items.length;i++)
