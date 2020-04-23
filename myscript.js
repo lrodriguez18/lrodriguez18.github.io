@@ -3,7 +3,7 @@ $(document).ready(function(){
    $("#myform").submit(function(){
 	   
 	   //Empties previous results from page.
-	   $("result").empty();
+	   $("#result").empty();
 
 	  // Gets the user input.
    	  var search = $("#books").val();
