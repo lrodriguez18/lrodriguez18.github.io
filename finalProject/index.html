@@ -18,10 +18,8 @@
 
     <script>
         $(document).ready(function() {
-            $.getJSON("https://data.orghunter.com/v1/charitysearch?user_key=1b7a21f75daf42af87666ef713510b26&zipCode=97060?callback=?",function(json){
-  console.log(json);});
     $('#table').DataTable( {
-        "ajax": "json",
+        "ajax": "https://cors-anywhere.herokuapp.com/http://data.orghunter.com/v1/charitybasic?user_key=1b7a21f75daf42af87666ef713510b26&ein=590774235&zipCode=97060",
         "columns": [
             { "data": "charityName" },
             { "data": "missionStatement" },
