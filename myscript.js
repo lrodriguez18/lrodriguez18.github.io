@@ -1,4 +1,7 @@
-$(document).ready(function(){	
+$(document).ready(function(){
+	function clearContent(){
+        $("#result").textContent = "";
+    }
 
    $("#myform").submit(function(){
 
