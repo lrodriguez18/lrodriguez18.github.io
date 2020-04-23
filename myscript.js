@@ -1,9 +1,7 @@
 $(document).ready(function(){
-	function clearContent(){
-        $("#result").textContent = "";
-    }
 
    $("#myform").submit(function(){
+	   $("#result").textContent = "";
 
    	  var search = $("#books").val();
    	  if(search === "")
