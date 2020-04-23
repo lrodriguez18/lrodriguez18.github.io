@@ -24,7 +24,7 @@ $(document).ready(function(){
 			  
            img = $('<img class="aligning card z-depth-5" id="dynamic"><br><a href=' + response.items[i].volumeInfo.infoLink + '><button id="imagebutton" class="btn red aligning">Read More</button></a>'); 
 			  
-           url = response.items[i].volumeInfo.imageLinks.thumbnail
+           url = response.items[i].volumeInfo.imageLinks.thumbnail;
 			  
            img.attr('src', url);
 			  
