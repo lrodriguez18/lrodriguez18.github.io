@@ -24,12 +24,12 @@
             $("#results").append("<tr><td>" + result + "</td></tr>");
         }
 
-    function logResults(response)
+    function logResults(response["data"])
         {
             console.log("Show all the results: " + response);
             for(var i in response)
             {
-                showResult(response["data"][i]);
+                showResult(response[i]);
             }
 
         }
