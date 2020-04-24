@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Rodriguez Final Project
+    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="finalProject.js"></script>
+  
+    
+</head>
+
+<body>
+    <div id = "header">
+        <img src="animation.gif" alt="NONPROFIT SEARCH">
+    </div>
+
+    <div data-aos = "fade-right">
+        <div id = "background">
+            <h1 class = "bold">Background</h1>
+            <p>I was inspired to create this page based on the current situation of COVID-19 in our country. 
+                While everyone is in social isolation for our safety, businesses in all industries are taking the hit. 
+                I was specifically interested in how nonprofits were affected since much of their funding is through donor support. 
+                According to a recent study of 4000 nonprofits conducted by the consulting firm, La Piana, some of the results of nonprofit closures due to the coronavirus are as follows: 
+            </p>
+
+            <div id = stats>
+                <ul>
+                    <li>93% of respondents have been forced to cut services or change how they have provided them thus far.</li>
+                    <li>26% of respondents indicated a loss of revenue between 50% and 100%.</li>
+                    <li>79% of respondents have moved some or all of their programs/services to an online or another digital delivery method.</li>
+                </ul> 
+            </div>
+
+            <p>Therefore, I created this site, in order to find all the nonprofits in my area to learn more about and maybe support. I hope this encourages you to do the same! </p>
+        </div>
+    </div>
+
+
+
+    <div id = "instructions">
+        <h1 class = "bold">Instructions</h1>
+
+        <p>Simply put in your zip code and see the results of all the nonprofits near you! Also, check out more information about the organization, such as its address and finances, by clicking on the button on its row.</p>
+    </div>
+
+
+    <div data-aos="fade-left">
+        <div id="user-input">
+            <p>
+                <label class = "bold" id = "zip" for="zip">Enter your five-digit zipcode!</label>
+                <input id="zip-input" type="text" size="10" placeholder="(e.g. 97132)"><br>
+                <button id="search-zipcode">Search</button>
+            </p>
+        </div>
+    </div>
+
+    <div data-aos="fade-up">
+        <table id="table" class="display">
+            <thead>
+                <tr id = "header" class = "header">
+                </tr>
+            </thead>
+            <tbody class = "results" id = "results">
+                <tr class = "resultRows"></tr>
+            </tbody>
+            <tfooter>
+                <tr class = "header"></tr>
+            </tfooter>
+        </table>
+    </div>
+
+    <footer id ="footer">
+        <p>Thank you to all of our health professionals, first responders, nonprofits and other essential workers for serving our communities during this time.</p>
+    </footer>
+</html>
+<script>
+    AOS.init();
+  </script>
+</body>
